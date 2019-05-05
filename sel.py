@@ -4,6 +4,7 @@ import time
 import cPickle
 
 progDir = list()
+progDirBugCrowd = list()
 
 def driver_stop(driver):
     driver.close()
@@ -24,6 +25,10 @@ def dump_load(filename):
 def printHackeronePrograms(programList):
     for i in programList:
     	print "\033[1;32mProgram Name:\033[1;m" + "\033[1;33m" + i['progName'] +"\033[1;m" + "                  "  + "\033[1;35m" +i['progLaunchDate'] + "\033[1;m" +  "                 " + "\033[1;36m" +i['progMinBounty'] + "\033[1;m"
+
+def printBugCrowdPrograms():
+	for i in progDirBugCrowd:
+		print "\033[1;31mBugcrowd: "+"\033[1;m" + "\033[1;33m"  + i + "\033[1;m"
 
 def crawlHackerone(driver):
     driver.get('https://hackerone.com/directory?order_direction=DESC') 
@@ -79,6 +84,28 @@ def crawlHackerone(driver):
 	program['progMinBounty'] = progMinBounty
 	progDir.append(program)
 	program = {}
+
+
+
+
+#Crawl BugCrowd
+def crawlBugCrowd(driver):
+    driver.get('https://bugcrowd.com/programs') 
+    time.sleep(10)
+    #Scroll Page By Clicking Load More
+    for i in range(10):
+    	button=driver.find_elements_by_xpath("//button[@class='rp-program-list__load-more__btn bc-btn bc-btn--small bc-btn--text']")
+	if len(button) < 1:
+		break
+	button[0].click()
+	time.sleep(5)
+    
+    ele=driver.execute_script('return document.body.innerHTML')
+    root=bs4.BeautifulSoup(ele,"lxml")
+    allProgramCards = root.find_all('li',{'class':'col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bc-program-card'})
+    for prog in allProgramCards:
+	progName = str(prog.find_all('h4',{'class':'bc-panel__title'})).split(">")[2].split("<")[0]
+	progDirBugCrowd.append(progName)
 	
 
 
@@ -100,7 +127,13 @@ driver = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrom
 # Log path added via service_args to see errors if something goes wrong (always a good idea - many of the errors I encountered were described in the logs)
 
 # And now you can add your website / app testing functionality: 
+
+
 crawlHackerone(driver)
-#dump_load('programs_orig')
+#dump_load('programs_h1')
 printHackeronePrograms(progDir)
+dump_dump('program_h1',progDir)
+dump_dump('program_bugcrowd',progDirBugCrowd)
+crawlBugCrowd(driver)
+printBugCrowdPrograms()
 driver_stop(driver)
