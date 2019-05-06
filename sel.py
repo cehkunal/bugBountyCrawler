@@ -3,9 +3,45 @@ import bs4
 import time
 import cPickle
 import requests
+import sqlite3
 
 progDir = list()
 progDirBugCrowd = list()
+
+def syncToDatabase():
+	conn = sqlite3.connect('bugBounty.db')
+	conn.execute('''CREATE TABLE IF NOT EXISTS PROGRAMS(
+	        PROG_NAME TEXT NOT NULL PRIMARY KEY,
+	        PROG_LAUNCH_DATE TEXT,
+	        PROG_MIN_BOUNTY TEXT,
+	        PROG_SOURCE TEXT,
+        	PROG_IN_SCOPE TEXT
+        	);
+	''')
+
+	#Sync Hackerone Programs
+	with open('program_h1') as f:
+	    data = cPickle.load(f)
+	f.close()
+	#Parse Data
+	for p in data:
+	    name = p['progName']
+	    ldate = p['progLaunchDate']
+	    minb = p['progMinBounty']
+	    conn.execute('''INSERT INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (name,ldate,minb,'HackerOne'))
+
+	#Synch Bugcrowd Programs
+	with open('program_bugcrowd') as f:
+	    data = cPickle.load(f)
+	f.close()
+	for p in data:
+	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_SOURCE) VALUES(?,?);''', (p,'BugCrowd'))
+
+
+	cur = conn.execute('SELECT * FROM PROGRAMS;')
+	for a in cur:
+	    print str(a)
+
 
 def notifyNewPrograms():
     h1diff = checkh1difference()
@@ -176,3 +212,5 @@ dump_dump('program_h1',progDir)
 dump_dump('program_bugcrowd',progDirBugCrowd)
 
 driver_stop(driver)
+print "\033[1;39mSaving Results in bugBounty.db\033[1;m"
+syncToDatabase()
