@@ -19,6 +19,14 @@ def syncToDatabase():
         	);
 	''')
 
+
+	#Synch Bugcrowd Programs
+	with open('program_bugcrowd') as f:
+	    data = cPickle.load(f)
+	f.close()
+	for p in data:
+	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (p,'','','BugCrowd'))
+
 	#Sync Hackerone Programs
 	with open('program_h1') as f:
 	    data = cPickle.load(f)
@@ -28,15 +36,7 @@ def syncToDatabase():
 	    name = p['progName']
 	    ldate = p['progLaunchDate']
 	    minb = p['progMinBounty']
-	    conn.execute('''INSERT INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (name,ldate,minb,'HackerOne'))
-
-	#Synch Bugcrowd Programs
-	with open('program_bugcrowd') as f:
-	    data = cPickle.load(f)
-	f.close()
-	for p in data:
-	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_SOURCE) VALUES(?,?);''', (p,'BugCrowd'))
-
+	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (name,ldate,minb,'HackerOne'))
 
 	cur = conn.execute('SELECT * FROM PROGRAMS;')
 	for a in cur:
