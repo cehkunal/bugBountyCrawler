@@ -2,9 +2,56 @@ from selenium import webdriver
 import bs4
 import time
 import cPickle
+import requests
 
 progDir = list()
 progDirBugCrowd = list()
+
+def notifyNewPrograms():
+    h1diff = checkh1difference()
+    bcdiff = checkbugcrowddifference()
+    if len(h1diff) > 0:
+        sendsms(['8010533210','8770766532','8460473254'],",".join(list(h1diff)),'Hackerone')    
+    if len(bcdiff) > 0:
+        sendsms(['8010533210','8770766532','8460473250'],",".join(list(bcdiff)),'Bugcrowd')
+
+
+def checkh1difference():
+    tmpProg1 = []
+    tmpProg2 = []
+    h1Progs = dump_load('program_h1')
+    for prog in h1Progs:
+        tmpProg1.append(prog['progName'])
+    for prog in progDir:
+        tmpProg2.append(prog['progName'])
+    diff = set(tmpProg2) - set(tmpProg1)
+    return diff
+
+def checkbugcrowddifference():
+    bugcrowdPrograms_old = dump_load('program_bugcrowd')
+    bugcrowdprograms_new = progDirBugCrowd
+    diff = set(bugcrowdprograms_new) - set(bugcrowdPrograms_old)
+    return diff
+
+
+def getsmstoken():
+    with open('/etc/fast2sms','rb') as f:
+        data = f.readlines()
+        apiStr = data[2]
+        apiToken = str(apiStr).split(":")[1].strip()
+        return apiToken
+
+def sendsms(to, data , source):
+    #to is a LIST of recipents
+    msg = "New Programs Found in " + source + ":" + data
+    print "\033[1;30mSending Alerts\033[1;m" + msg
+    rcpt = ",".join(to)
+    token = getsmstoken()
+    url = 'https://www.fast2sms.com/dev/bulk'
+    payload = 'sender_id=FSTSMS&message=' + msg + '&language=english&route=p&numbers=' + rcpt
+    headers = { 'authorization':token, 'Content-Type':'application/x-www-form-urlencoded', 'Cache-Control':'no-cache', }
+    response = requests.request('POST', url, data=payload, headers=headers)
+    print response
 
 def driver_stop(driver):
     driver.close()
@@ -18,9 +65,8 @@ def dump_dump(filename,x):
 def dump_load(filename):
     with open(filename,'rb') as f:
         data=cPickle.load(f)
-    for d in list(data):
-	print str(d)
     f.close()
+    return data
 
 def printHackeronePrograms(programList):
     for i in programList:
@@ -39,7 +85,7 @@ def crawlHackerone(driver):
     #driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
     #time.sleep(10)
     
-    SCROLL_PAUSE_TIME = 5
+    SCROLL_PAUSE_TIME = 6
     
     last_height = driver.execute_script("return document.body.scrollHeight")
     while True:
@@ -117,23 +163,16 @@ chrome_options.add_argument('--disable-application-cache')
 chrome_options.add_argument('--no-sandbox') # required when running as root user. otherwise you would get no sandbox errors. 
 driver = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options,service_args=['--verbose', '--log-path=/tmp/chromedriver.log'])
 
-# Option 2 - with pyvirtualdisplay
-#from pyvirtualdisplay import Display 
-#display = Display(visible=0, size=(1024, 768)) 
-#display.start() 
-#driver = webdriver.Chrome(driver_path='/home/dev/chromedriver', 
-#          service_args=['--verbose', '--log-path=/tmp/chromedriver.log'])
-
-# Log path added via service_args to see errors if something goes wrong (always a good idea - many of the errors I encountered were described in the logs)
-
-# And now you can add your website / app testing functionality: 
-
-
 crawlHackerone(driver)
-#dump_load('programs_h1')
 printHackeronePrograms(progDir)
-dump_dump('program_h1',progDir)
-dump_dump('program_bugcrowd',progDirBugCrowd)
+
 crawlBugCrowd(driver)
 printBugCrowdPrograms()
+
+#Check Difference before dumping
+notifyNewPrograms()
+
+dump_dump('program_h1',progDir)
+dump_dump('program_bugcrowd',progDirBugCrowd)
+
 driver_stop(driver)
