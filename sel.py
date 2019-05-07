@@ -37,7 +37,7 @@ def syncToDatabase():
 	    ldate = p['progLaunchDate']
 	    minb = p['progMinBounty']
 	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (name,ldate,minb,'HackerOne'))
-
+        conn.commit()
 	cur = conn.execute('SELECT * FROM PROGRAMS;')
 	for a in cur:
 	    print str(a)
@@ -47,9 +47,9 @@ def notifyNewPrograms():
     h1diff = checkh1difference()
     bcdiff = checkbugcrowddifference()
     if len(h1diff) > 0:
-        sendsms(['8010533210','8770766532','8460473254'],",".join(list(h1diff)),'Hackerone')    
+        sendsms(['8010533210','8770766532','8660477425'],",".join(list(h1diff)),'Hackerone')    
     if len(bcdiff) > 0:
-        sendsms(['8010533210','8770766532','8460473250'],",".join(list(bcdiff)),'Bugcrowd')
+        sendsms(['8010533210','8770766532','8660477425'],",".join(list(bcdiff)),'Bugcrowd')
 
 
 def checkh1difference():
@@ -115,13 +115,8 @@ def printBugCrowdPrograms():
 def crawlHackerone(driver):
     driver.get('https://hackerone.com/directory?order_direction=DESC') 
     time.sleep(10)
-    #ele = driver.execute_script('return document.body.innerHTML')
-    #driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
-    #time.sleep(10)
-    #driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
-    #time.sleep(10)
     
-    SCROLL_PAUSE_TIME = 6
+    SCROLL_PAUSE_TIME =10 
     
     last_height = driver.execute_script("return document.body.scrollHeight")
     while True:
@@ -136,19 +131,8 @@ def crawlHackerone(driver):
         last_height = new_height
     
     
-    #x=driver.find_element_by_css_selector('.daisy-link spec-profile-name')
-    #print x,type(x)
     ele=driver.execute_script('return document.body.innerHTML')
-    #print ele
     root=bs4.BeautifulSoup(ele,"lxml")
-    #print dir(root)
-    #print type(root)
-    #programs = root.find_all('a',{'class':'daisy-link spec-profile-name'})
-    #for p in programs:
-    #    progDir.append(str(p).split(">")[1].split("<")[0])
-    #program_set =set(progDir)
-    #dump_dump('programs_orig',program_set)
-    # driver.click..
     programs = root.find_all('tr',{'class':'spec-directory-entry daisy-table__row fade fade--show'})    
     for p in programs:
 	program = {}
