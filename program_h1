@@ -2,2106 +2,2106 @@
 (dp2
 S'progMinBounty'
 p3
-S'No Bounty'
+S'$150'
 p4
 sS'progName'
 p5
-S'phpBB'
+S'Chainlink'
 p6
 sS'progLaunchDate'
 p7
-S'04 / 2019'
+S'05 / 2019'
 p8
 sa(dp9
 g3
-S'$250'
+S'No Bounty'
 p10
 sg5
-S'Priceline'
+S'phpBB'
 p11
 sg7
 S'04 / 2019'
 p12
 sa(dp13
 g3
-g4
+S'$250'
+p14
+sg5
+S'Priceline'
+p15
+sg7
+S'04 / 2019'
+p16
+sa(dp17
+g3
+g10
 sg5
 S'curl'
-p14
+p18
 sg7
 S'04 / 2019'
-p15
-sa(dp16
+p19
+sa(dp20
 g3
-g4
+g10
 sg5
 S'ZEIT'
-p17
+p21
 sg7
 S'04 / 2019'
-p18
-sa(dp19
+p22
+sa(dp23
 g3
-g4
+g10
 sg5
 S'TomTom'
-p20
+p24
 sg7
 S'04 / 2019'
-p21
-sa(dp22
+p25
+sa(dp26
 g3
-g4
+g10
 sg5
 S'Sweatco Ltd'
-p23
-sg7
-S'04 / 2019'
-p24
-sa(dp25
-g3
-S'$250'
-p26
-sg5
-S'Livestream'
 p27
 sg7
 S'04 / 2019'
 p28
 sa(dp29
 g3
-g4
+S'$250'
+p30
+sg5
+S'Livestream'
+p31
+sg7
+S'04 / 2019'
+p32
+sa(dp33
+g3
+g10
 sg5
 S'Xilinx'
-p30
+p34
 sg7
 S'04 / 2019'
-p31
-sa(dp32
+p35
+sa(dp36
 g3
-g4
+g10
 sg5
 S'Python Cryptographic Authority'
-p33
+p37
 sg7
 S'04 / 2019'
-p34
-sa(dp35
+p38
+sa(dp39
 g3
-g4
+g10
 sg5
 S'Capital One'
-p36
-sg7
-S'04 / 2019'
-p37
-sa(dp38
-g3
-S'$100'
-p39
-sg5
-S'Backblaze'
 p40
 sg7
 S'04 / 2019'
 p41
 sa(dp42
 g3
-S'$175'
+S'$100'
 p43
 sg5
-S'Smartsheet'
+S'Backblaze'
 p44
 sg7
 S'04 / 2019'
 p45
 sa(dp46
 g3
-S'$150'
+S'$175'
 p47
 sg5
-S'Trustpilot'
+S'Smartsheet'
 p48
 sg7
 S'04 / 2019'
 p49
 sa(dp50
 g3
-S'$200'
+S'$150'
 p51
 sg5
-S'Lob'
+S'Trustpilot'
 p52
 sg7
-S'03 / 2019'
+S'04 / 2019'
 p53
 sa(dp54
 g3
-g4
-sg5
-S'UMA Project'
+S'$200'
 p55
+sg5
+S'Lob'
+p56
 sg7
 S'03 / 2019'
-p56
-sa(dp57
+p57
+sa(dp58
 g3
-S'$275'
-p58
+g10
 sg5
-S'InnoGames'
+S'UMA Project'
 p59
 sg7
 S'03 / 2019'
 p60
 sa(dp61
 g3
-g4
+S'$275'
+p62
+sg5
+S'InnoGames'
+p63
+sg7
+S'03 / 2019'
+p64
+sa(dp65
+g3
+g10
 sg5
 S'Tube8'
-p62
+p66
 sg7
 S'03 / 2019'
-p63
-sa(dp64
+p67
+sa(dp68
 g3
-g4
+g10
 sg5
 S'Starling Bank Limited'
-p65
-sg7
-S'03 / 2019'
-p66
-sa(dp67
-g3
-S'$500'
-p68
-sg5
-S'Credit Karma'
 p69
 sg7
 S'03 / 2019'
 p70
 sa(dp71
 g3
-S'$562'
+S'$500'
 p72
 sg5
-S'Midpoint (European Commission - DIGIT)'
+S'Credit Karma'
 p73
 sg7
 S'03 / 2019'
 p74
 sa(dp75
 g3
-g4
-sg5
-S'Central Security Project'
+S'$562'
 p76
+sg5
+S'Midpoint (European Commission - DIGIT)'
+p77
 sg7
 S'03 / 2019'
-p77
-sa(dp78
+p78
+sa(dp79
 g3
-S'$1k'
-p79
+g10
 sg5
-S'ICONLOOP Inc.'
+S'Central Security Project'
 p80
 sg7
 S'03 / 2019'
 p81
 sa(dp82
 g3
-S'$100'
+S'$1k'
 p83
 sg5
-S'Omise'
+S'ICONLOOP Inc.'
 p84
 sg7
 S'03 / 2019'
 p85
 sa(dp86
 g3
-S'$150'
+S'$100'
 p87
 sg5
-S'Semmle'
+S'Omise'
 p88
 sg7
-S'02 / 2019'
+S'03 / 2019'
 p89
 sa(dp90
 g3
-S'$220'
+S'$150'
 p91
 sg5
-S'Postmates'
+S'Semmle'
 p92
 sg7
 S'02 / 2019'
 p93
 sa(dp94
 g3
-g4
+S'$220'
+p95
+sg5
+S'Postmates'
+p96
+sg7
+S'02 / 2019'
+p97
+sa(dp98
+g3
+g10
 sg5
 S'FileZilla (European Commission - DIGIT)'
-p95
-sg7
-S'01 / 2019'
-p96
-sa(dp97
-g3
-S'$1k'
-p98
-sg5
-S'Magento'
 p99
 sg7
 S'01 / 2019'
 p100
 sa(dp101
 g3
-g4
-sg5
-S'Apache Kafka (European Commission - DIGIT)'
+S'$1k'
 p102
+sg5
+S'Magento'
+p103
 sg7
 S'01 / 2019'
-p103
-sa(dp104
+p104
+sa(dp105
 g3
-S'$284'
-p105
+g10
 sg5
-S'PuTTY (European Commission - DIGIT)'
+S'Apache Kafka (European Commission - DIGIT)'
 p106
 sg7
 S'01 / 2019'
 p107
 sa(dp108
 g3
-g4
-sg5
-S'Ford'
+S'$284'
 p109
+sg5
+S'PuTTY (European Commission - DIGIT)'
+p110
 sg7
 S'01 / 2019'
-p110
-sa(dp111
+p111
+sa(dp112
 g3
-S'$300'
-p112
+g10
 sg5
-S'Hyatt Hotels'
+S'Ford'
 p113
 sg7
 S'01 / 2019'
 p114
 sa(dp115
 g3
-g4
-sg5
-S'CFP Time'
+S'$300'
 p116
+sg5
+S'Hyatt Hotels'
+p117
 sg7
 S'01 / 2019'
-p117
-sa(dp118
+p118
+sa(dp119
 g3
-S'$150'
-p119
+g10
 sg5
-S'Grammarly'
+S'CFP Time'
 p120
 sg7
-S'12 / 2018'
+S'01 / 2019'
 p121
 sa(dp122
 g3
-g4
-sg5
-S'RATELIMITED'
+S'$150'
 p123
+sg5
+S'Grammarly'
+p124
 sg7
 S'12 / 2018'
-p124
-sa(dp125
+p125
+sa(dp126
 g3
-g4
+g10
+sg5
+S'RATELIMITED'
+p127
+sg7
+S'12 / 2018'
+p128
+sa(dp129
+g3
+g10
 sg5
 S'Avito'
-p126
-sg7
-S'11 / 2018'
-p127
-sa(dp128
-g3
-S'$0'
-p129
-sg5
-S'Aeternity'
 p130
 sg7
 S'11 / 2018'
 p131
 sa(dp132
 g3
-S'$200'
+S'$0'
 p133
 sg5
-S'FanDuel'
+S'Aeternity'
 p134
 sg7
 S'11 / 2018'
 p135
 sa(dp136
 g3
-g4
-sg5
-S"Hanno's projects"
+S'$200'
 p137
+sg5
+S'FanDuel'
+p138
 sg7
 S'11 / 2018'
-p138
-sa(dp139
+p139
+sa(dp140
 g3
-S'$150'
-p140
+g10
 sg5
-S'Flickr'
+S"Hanno's projects"
 p141
 sg7
 S'11 / 2018'
 p142
 sa(dp143
 g3
-S'$200'
+S'$150'
 p144
 sg5
-S'Casper'
+S'Flickr'
 p145
 sg7
-S'10 / 2018'
+S'11 / 2018'
 p146
 sa(dp147
 g3
-g4
-sg5
-S'Vivy'
+S'$200'
 p148
+sg5
+S'Casper'
+p149
 sg7
 S'10 / 2018'
-p149
-sa(dp150
+p150
+sa(dp151
 g3
-S'$242'
-p151
+g10
 sg5
-S'Matomo'
+S'Vivy'
 p152
 sg7
-S'09 / 2018'
+S'10 / 2018'
 p153
 sa(dp154
 g3
-g4
+S'$242'
+p155
+sg5
+S'Matomo'
+p156
+sg7
+S'09 / 2018'
+p157
+sa(dp158
+g3
+g10
 sg5
 S'ESLint'
-p155
+p159
 sg7
 S'09 / 2018'
-p156
-sa(dp157
+p160
+sa(dp161
 g3
-g4
+g10
 sg5
 S'OpenVPN'
-p158
+p162
 sg7
 S'09 / 2018'
-p159
-sa(dp160
+p163
+sa(dp164
 g3
-g4
+g10
 sg5
 S'VeraCrypt'
-p161
+p165
 sg7
 S'09 / 2018'
-p162
-sa(dp163
+p166
+sa(dp167
 g3
-g4
+g10
 sg5
 S'Alibaba'
-p164
+p168
 sg7
 S'09 / 2018'
-p165
-sa(dp166
+p169
+sa(dp170
 g3
-g4
+g10
 sg5
 S'blockimmo'
-p167
-sg7
-S'08 / 2018'
-p168
-sa(dp169
-g3
-S'$1k'
-p170
-sg5
-S'PayPal'
 p171
 sg7
 S'08 / 2018'
 p172
 sa(dp173
 g3
-S'$100'
+S'$1k'
 p174
 sg5
-S'Voatz'
+S'PayPal'
 p175
 sg7
 S'08 / 2018'
 p176
 sa(dp177
 g3
-g4
+S'$100'
+p178
+sg5
+S'Voatz'
+p179
+sg7
+S'08 / 2018'
+p180
+sa(dp181
+g3
+g10
 sg5
 S'MariaDB'
-p178
-sg7
-S'07 / 2018'
-p179
-sa(dp180
-g3
-S'$150'
-p181
-sg5
-S'Chaturbate'
 p182
 sg7
 S'07 / 2018'
 p183
 sa(dp184
 g3
-g4
-sg5
-S'IBM'
+S'$150'
 p185
+sg5
+S'Chaturbate'
+p186
 sg7
 S'07 / 2018'
-p186
-sa(dp187
+p187
+sa(dp188
 g3
-g4
+g10
+sg5
+S'IBM'
+p189
+sg7
+S'07 / 2018'
+p190
+sa(dp191
+g3
+g10
 sg5
 S'Tezos'
-p188
-sg7
-S'06 / 2018'
-p189
-sa(dp190
-g3
-S'$1k'
-p191
-sg5
-S'Tron Foundation'
 p192
 sg7
 S'06 / 2018'
 p193
 sa(dp194
 g3
-S'$500'
+S'$1k'
 p195
 sg5
-S'Augur'
+S'Tron Foundation'
 p196
 sg7
 S'06 / 2018'
 p197
 sa(dp198
 g3
-g4
+S'$500'
+p199
+sg5
+S'Augur'
+p200
+sg7
+S'06 / 2018'
+p201
+sa(dp202
+g3
+g10
 sg5
 S'Internet Freedom (IBB)'
-p199
+p203
 sg7
 S'06 / 2018'
-p200
-sa(dp201
+p204
+sa(dp205
 g3
-g4
+g10
 sg5
 S'arkadiyt-projects'
-p202
-sg7
-S'06 / 2018'
-p203
-sa(dp204
-g3
-S'$250'
-p205
-sg5
-S'MyEtherWallet'
 p206
 sg7
 S'06 / 2018'
 p207
 sa(dp208
 g3
-S'$50'
+S'$250'
 p209
 sg5
-S'Liberapay'
+S'MyEtherWallet'
 p210
 sg7
 S'06 / 2018'
 p211
 sa(dp212
 g3
-g4
+S'$50'
+p213
+sg5
+S'Liberapay'
+p214
+sg7
+S'05 / 2018'
+p215
+sa(dp216
+g3
+g10
 sg5
 S'Block.one'
-p213
+p217
 sg7
 S'05 / 2018'
-p214
-sa(dp215
+p218
+sa(dp219
 g3
-g4
+g10
 sg5
 S'Tendermint'
-p216
+p220
 sg7
 S'05 / 2018'
-p217
-sa(dp218
+p221
+sa(dp222
 g3
-g4
+g10
 sg5
 S'DuckDuckGo'
-p219
+p223
 sg7
 S'05 / 2018'
-p220
-sa(dp221
+p224
+sa(dp225
 g3
-g4
+g10
 sg5
 S'Impinj'
-p222
+p226
 sg7
 S'05 / 2018'
-p223
-sa(dp224
+p227
+sa(dp228
 g3
-g4
+g10
 sg5
 S'Crypto.com'
-p225
-sg7
-S'04 / 2018'
-p226
-sa(dp227
-g3
-S'$100'
-p228
-sg5
-S'Cobinhood'
 p229
 sg7
 S'04 / 2018'
 p230
 sa(dp231
 g3
-g4
-sg5
-S'Passit'
+S'$100'
 p232
+sg5
+S'Cobinhood'
+p233
 sg7
 S'04 / 2018'
-p233
-sa(dp234
+p234
+sa(dp235
 g3
-g4
+g10
+sg5
+S'Passit'
+p236
+sg7
+S'04 / 2018'
+p237
+sa(dp238
+g3
+g10
 sg5
 S'Loofah'
-p235
+p239
 sg7
 S'03 / 2018'
-p236
-sa(dp237
+p240
+sa(dp241
 g3
-g4
+g10
 sg5
 S'Node.js'
-p238
+p242
 sg7
 S'03 / 2018'
-p239
-sa(dp240
+p243
+sa(dp244
 g3
-g4
+g10
 sg5
 S'Nokogiri'
-p241
+p245
 sg7
 S'03 / 2018'
-p242
-sa(dp243
+p246
+sa(dp247
 g3
-g4
+g10
 sg5
 S'MediaMarktSaturn'
-p244
+p248
 sg7
 S'03 / 2018'
-p245
-sa(dp246
+p249
+sa(dp250
 g3
-g4
+g10
 sg5
 S'MyCrypto'
-p247
+p251
 sg7
 S'03 / 2018'
-p248
-sa(dp249
+p252
+sa(dp253
 g3
-g4
+g10
 sg5
 S'JamieWeb'
-p250
-sg7
-S'02 / 2018'
-p251
-sa(dp252
-g3
-S'$1k'
-p253
-sg5
-S'Nimiq'
 p254
 sg7
 S'02 / 2018'
 p255
 sa(dp256
 g3
-g4
-sg5
-S'Toyota'
+S'$1k'
 p257
+sg5
+S'Nimiq'
+p258
 sg7
 S'02 / 2018'
-p258
-sa(dp259
+p259
+sa(dp260
 g3
-S'$2k'
-p260
+g10
 sg5
-S'RSK'
+S'Toyota'
 p261
 sg7
 S'02 / 2018'
 p262
 sa(dp263
 g3
-S'$100'
+S'$2k'
 p264
 sg5
-S'BitMEX'
+S'RSK'
 p265
 sg7
 S'02 / 2018'
 p266
 sa(dp267
 g3
-g4
+S'$100'
+p268
+sg5
+S'BitMEX'
+p269
+sg7
+S'02 / 2018'
+p270
+sa(dp271
+g3
+g10
 sg5
 S'passhash'
-p268
+p272
 sg7
 S'01 / 2018'
-p269
-sa(dp270
+p273
+sa(dp274
 g3
-g4
+g10
 sg5
 S'Crowdstrike'
-p271
+p275
 sg7
 S'01 / 2018'
-p272
-sa(dp273
+p276
+sa(dp277
 g3
-g4
+g10
 sg5
 S'Goldman Sachs VDP'
-p274
+p278
 sg7
-S'12 / 2017'
-p275
-sa(dp276
+S'11 / 2017'
+p279
+sa(dp280
 g3
-g4
+g10
 sg5
 S'Node.js third-party modules'
-p277
+p281
 sg7
 S'11 / 2017'
-p278
-sa(dp279
+p282
+sa(dp283
 g3
-g4
+g10
 sg5
 S'Ed'
-p280
-sg7
-S'11 / 2017'
-p281
-sa(dp282
-g3
-S'$100'
-p283
-sg5
-S'Electroneum'
 p284
 sg7
 S'11 / 2017'
 p285
 sa(dp286
 g3
-S'$500'
+S'$100'
 p287
 sg5
-S'RecargaPay'
+S'Electroneum'
 p288
 sg7
-S'10 / 2017'
+S'11 / 2017'
 p289
 sa(dp290
 g3
-g4
-sg5
-S'RBKmoney'
+S'$500'
 p291
+sg5
+S'RecargaPay'
+p292
 sg7
 S'10 / 2017'
-p292
-sa(dp293
+p293
+sa(dp294
 g3
-S'$750'
-p294
+g10
 sg5
-S'Valve'
+S'RBKmoney'
 p295
 sg7
 S'10 / 2017'
 p296
 sa(dp297
 g3
-g4
+S'$750'
+p298
+sg5
+S'Valve'
+p299
+sg7
+S'10 / 2017'
+p300
+sa(dp301
+g3
+g10
 sg5
 S'AlienVault '
-p298
+p302
 sg7
 S'10 / 2017'
-p299
-sa(dp300
+p303
+sa(dp304
 g3
-g4
+g10
 sg5
 S'Sony'
-p301
-sg7
-S'10 / 2017'
-p302
-sa(dp303
-g3
-S'$500'
-p304
-sg5
-S'Data Processing (IBB)'
 p305
 sg7
-S'09 / 2017'
+S'10 / 2017'
 p306
 sa(dp307
 g3
-g4
+S'$500'
+p308
+sg5
+S'Data Processing (IBB)'
+p309
+sg7
+S'09 / 2017'
+p310
+sa(dp311
+g3
+g10
 sg5
 S'JohnBlackbourn'
-p308
+p312
 sg7
 S'09 / 2017'
-p309
-sa(dp310
+p313
+sa(dp314
 g3
-g4
+g10
 sg5
 S'Razer US'
-p311
-sg7
-S'09 / 2017'
-p312
-sa(dp313
-g3
-S'$300'
-p314
-sg5
-S'TTS Bug Bounty'
 p315
 sg7
-S'08 / 2017'
+S'09 / 2017'
 p316
 sa(dp317
 g3
 S'$300'
 p318
 sg5
-S'Deliveroo'
+S'TTS Bug Bounty'
 p319
 sg7
 S'08 / 2017'
 p320
 sa(dp321
 g3
-g4
+S'$300'
+p322
+sg5
+S'Deliveroo'
+p323
+sg7
+S'08 / 2017'
+p324
+sa(dp325
+g3
+g10
 sg5
 S'Infogram'
-p322
+p326
 sg7
 S'08 / 2017'
-p323
-sa(dp324
+p327
+sa(dp328
 g3
-g4
+g10
 sg5
 S'Vend'
-p325
-sg7
-S'08 / 2017'
-p326
-sa(dp327
-g3
-S'$500'
-p328
-sg5
-S'Hyperledger'
 p329
 sg7
 S'08 / 2017'
 p330
 sa(dp331
 g3
-S'$100'
+S'$500'
 p332
 sg5
-S'Zendesk Connect'
+S'Hyperledger'
 p333
 sg7
 S'08 / 2017'
 p334
 sa(dp335
 g3
-g4
-sg5
-S'Monero'
+S'$100'
 p336
+sg5
+S'Zendesk Connect'
+p337
 sg7
 S'08 / 2017'
-p337
-sa(dp338
+p338
+sa(dp339
 g3
-S'$150'
-p339
+g10
 sg5
-S'Vanilla'
+S'Monero'
 p340
 sg7
-S'07 / 2017'
+S'08 / 2017'
 p341
 sa(dp342
 g3
-g4
+S'$150'
+p343
+sg5
+S'Vanilla'
+p344
+sg7
+S'07 / 2017'
+p345
+sa(dp346
+g3
+g10
 sg5
 S'Bitwarden'
-p343
+p347
 sg7
 S'07 / 2017'
-p344
-sa(dp345
+p348
+sa(dp349
 g3
-g4
+g10
 sg5
 S'delight.im'
-p346
-sg7
-S'07 / 2017'
-p347
-sa(dp348
-g3
-S'$1k'
-p349
-sg5
-S'Google Play Security Reward Program'
 p350
 sg7
-S'06 / 2017'
+S'07 / 2017'
 p351
 sa(dp352
 g3
-S'$250'
+S'$1k'
 p353
 sg5
-S'Upserve '
+S'Google Play Security Reward Program'
 p354
 sg7
 S'06 / 2017'
 p355
 sa(dp356
 g3
-g4
+S'$250'
+p357
+sg5
+S'Upserve '
+p358
+sg7
+S'06 / 2017'
+p359
+sa(dp360
+g3
+g10
 sg5
 S'WakaTime'
-p357
+p361
 sg7
 S'06 / 2017'
-p358
-sa(dp359
+p362
+sa(dp363
 g3
-g4
+g10
 sg5
 S'Redtube'
-p360
+p364
 sg7
 S'06 / 2017'
-p361
-sa(dp362
+p365
+sa(dp366
 g3
-g4
+g10
 sg5
 S'Parrot Sec'
-p363
-sg7
-S'06 / 2017'
-p364
-sa(dp365
-g3
-S'$130'
-p366
-sg5
-S'Bumble'
 p367
 sg7
 S'06 / 2017'
 p368
 sa(dp369
 g3
-S'$300'
+S'$130'
 p370
 sg5
-S'Spotify'
+S'Bumble'
 p371
 sg7
-S'05 / 2017'
+S'06 / 2017'
 p372
 sa(dp373
 g3
-g4
-sg5
-S'Cuvva'
+S'$300'
 p374
+sg5
+S'Spotify'
+p375
 sg7
 S'05 / 2017'
-p375
-sa(dp376
+p376
+sa(dp377
 g3
-S'$500'
-p377
+g10
 sg5
-S'Teradici'
+S'Cuvva'
 p378
 sg7
 S'05 / 2017'
 p379
 sa(dp380
 g3
-g4
-sg5
-S'Stellar.org'
+S'$500'
 p381
+sg5
+S'Teradici'
+p382
 sg7
 S'05 / 2017'
-p382
-sa(dp383
+p383
+sa(dp384
 g3
-g4
+g10
+sg5
+S'Stellar.org'
+p385
+sg7
+S'05 / 2017'
+p386
+sa(dp387
+g3
+g10
 sg5
 S'Rocket.Chat'
-p384
+p388
 sg7
 S'04 / 2017'
-p385
-sa(dp386
+p389
+sa(dp390
 g3
-g4
+g10
 sg5
 S'Homebrew'
-p387
+p391
 sg7
 S'04 / 2017'
-p388
-sa(dp389
+p392
+sa(dp393
 g3
-g4
+g10
 sg5
 S'Weblate'
-p390
+p394
 sg7
 S'04 / 2017'
-p391
-sa(dp392
+p395
+sa(dp396
 g3
-g4
+g10
 sg5
 S'Shipt'
-p393
+p397
 sg7
 S'04 / 2017'
-p394
-sa(dp395
+p398
+sa(dp399
 g3
-g4
+g10
 sg5
 S'Intel Corporation'
-p396
+p400
 sg7
 S'03 / 2017'
-p397
-sa(dp398
+p401
+sa(dp402
 g3
-g4
+g10
 sg5
 S'Disclosure Assistance'
-p399
-sg7
-S'03 / 2017'
-p400
-sa(dp401
-g3
-S'$100'
-p402
-sg5
-S'Lyst'
 p403
 sg7
-S'01 / 2017'
+S'03 / 2017'
 p404
 sa(dp405
 g3
-S'$196'
+S'$100'
 p406
 sg5
-S'Showmax'
+S'Lyst'
 p407
 sg7
 S'01 / 2017'
 p408
 sa(dp409
 g3
-g4
+S'$196'
+p410
+sg5
+S'Showmax'
+p411
+sg7
+S'01 / 2017'
+p412
+sa(dp413
+g3
+g10
 sg5
 S'YouPorn'
-p410
+p414
 sg7
 S'12 / 2016'
-p411
-sa(dp412
+p415
+sa(dp416
 g3
-g4
+g10
 sg5
 S'MapsMarker.com e.U.'
-p413
-sg7
-S'12 / 2016'
-p414
-sa(dp415
-g3
-S'$256'
-p416
-sg5
-S'Discourse'
 p417
 sg7
 S'12 / 2016'
 p418
 sa(dp419
 g3
-g4
-sg5
-S'Nintendo'
+S'$256'
 p420
+sg5
+S'Discourse'
+p421
 sg7
 S'12 / 2016'
-p421
-sa(dp422
+p422
+sa(dp423
 g3
-g4
+g10
+sg5
+S'Nintendo'
+p424
+sg7
+S'12 / 2016'
+p425
+sa(dp426
+g3
+g10
 sg5
 S'U.S. Dept Of Defense'
-p423
-sg7
-S'11 / 2016'
-p424
-sa(dp425
-g3
-S'$100'
-p426
-sg5
-S'Plaid'
 p427
 sg7
 S'11 / 2016'
 p428
 sa(dp429
 g3
-S'$800'
+S'$100'
 p430
 sg5
-S'shopify-scripts'
+S'Plaid'
 p431
 sg7
 S'11 / 2016'
 p432
 sa(dp433
 g3
-S'$100'
+S'$800'
 p434
 sg5
-S'SEMrush'
+S'shopify-scripts'
 p435
 sg7
-S'11 / 2016'
+S'10 / 2016'
 p436
 sa(dp437
 g3
-g4
+S'$100'
+p438
+sg5
+S'SEMrush'
+p439
+sg7
+S'10 / 2016'
+p440
+sa(dp441
+g3
+g10
 sg5
 S'Quora'
-p438
-sg7
-S'11 / 2016'
-p439
-sa(dp440
-g3
-S'$100'
-p441
-sg5
-S'Brave Software'
 p442
 sg7
 S'10 / 2016'
 p443
 sa(dp444
 g3
-S'$350'
+S'$100'
 p445
 sg5
-S'Quantopian'
+S'Brave Software'
 p446
 sg7
-S'09 / 2016'
+S'10 / 2016'
 p447
 sa(dp448
 g3
 S'$350'
 p449
 sg5
-S'PortSwigger Web Security'
+S'Quantopian'
 p450
 sg7
 S'09 / 2016'
 p451
 sa(dp452
 g3
-S'$1k'
+S'$350'
 p453
 sg5
-S'RubyGems'
+S'PortSwigger Web Security'
 p454
 sg7
 S'09 / 2016'
 p455
 sa(dp456
 g3
-S'$150'
+S'$1k'
 p457
 sg5
-S'BrickFTP'
+S'RubyGems'
 p458
 sg7
-S'08 / 2016'
+S'09 / 2016'
 p459
 sa(dp460
 g3
-g4
-sg5
-S'OWOX, Inc.'
+S'$150'
 p461
+sg5
+S'BrickFTP'
+p462
 sg7
 S'08 / 2016'
-p462
-sa(dp463
+p463
+sa(dp464
 g3
-S'$75'
-p464
+g10
 sg5
-S'Blockstack'
+S'OWOX, Inc.'
 p465
 sg7
 S'08 / 2016'
 p466
 sa(dp467
 g3
-g4
+S'$75'
+p468
+sg5
+S'Blockstack'
+p469
+sg7
+S'08 / 2016'
+p470
+sa(dp471
+g3
+g10
 sg5
 S'WordPress'
-p468
+p472
 sg7
 S'07 / 2016'
-p469
-sa(dp470
+p473
+sa(dp474
 g3
-g4
+g10
 sg5
 S'Aspen'
-p471
+p475
 sg7
 S'07 / 2016'
-p472
-sa(dp473
+p476
+sa(dp477
 g3
-g4
+g10
 sg5
 S'GoCD'
-p474
-sg7
-S'06 / 2016'
-p475
-sa(dp476
-g3
-S'$100'
-p477
-sg5
-S'VHX'
 p478
 sg7
 S'06 / 2016'
 p479
 sa(dp480
 g3
-g4
-sg5
-S'OLX'
+S'$100'
 p481
+sg5
+S'VHX'
+p482
 sg7
 S'06 / 2016'
-p482
-sa(dp483
+p483
+sa(dp484
 g3
-S'$100'
-p484
+g10
 sg5
-S'Nextcloud'
+S'OLX'
 p485
 sg7
 S'06 / 2016'
 p486
 sa(dp487
 g3
-S'$160'
+S'$100'
 p488
 sg5
-S'ICQ'
+S'Nextcloud'
 p489
 sg7
 S'06 / 2016'
 p490
 sa(dp491
 g3
-S'$250'
+S'$160'
 p492
 sg5
-S'Starbucks'
+S'ICQ'
 p493
 sg7
-S'05 / 2016'
+S'06 / 2016'
 p494
 sa(dp495
 g3
-S'$500'
+S'$250'
 p496
 sg5
-S'Ruby'
+S'Starbucks'
 p497
 sg7
 S'05 / 2016'
 p498
 sa(dp499
 g3
-g4
+S'$500'
+p500
+sg5
+S'Ruby'
+p501
+sg7
+S'05 / 2016'
+p502
+sa(dp503
+g3
+g10
 sg5
 S'Rockstar Games'
-p500
+p504
 sg7
 S'04 / 2016'
-p501
-sa(dp502
+p505
+sa(dp506
 g3
-g4
+g10
 sg5
 S'GitHub'
-p503
-sg7
-S'04 / 2016'
-p504
-sa(dp505
-g3
-S'$385'
-p506
-sg5
-S'PowerDNS'
 p507
 sg7
-S'03 / 2016'
+S'04 / 2016'
 p508
 sa(dp509
 g3
-S'$1k'
+S'$385'
 p510
 sg5
-S'Dovecot'
+S'PowerDNS'
 p511
 sg7
 S'03 / 2016'
 p512
 sa(dp513
 g3
-S'$300'
+S'$1k'
 p514
 sg5
-S'OX App Suite'
+S'Dovecot'
 p515
 sg7
 S'03 / 2016'
 p516
 sa(dp517
 g3
-S'$100'
+S'$300'
 p518
 sg5
-S'LocalTapiola'
+S'OX App Suite'
 p519
 sg7
-S'02 / 2016'
+S'03 / 2016'
 p520
 sa(dp521
 g3
-S'$50'
+S'$100'
 p522
 sg5
-S'Paragon Initiative Enterprises'
+S'LocalTapiola'
 p523
 sg7
-S'01 / 2016'
+S'02 / 2016'
 p524
 sa(dp525
 g3
 S'$50'
 p526
 sg5
-S'Bime'
+S'Paragon Initiative Enterprises'
 p527
 sg7
 S'01 / 2016'
 p528
 sa(dp529
 g3
-g4
-sg5
-S'Zomato'
+S'$50'
 p530
+sg5
+S'Bime'
+p531
 sg7
 S'01 / 2016'
-p531
-sa(dp532
+p532
+sa(dp533
 g3
-S'$500'
-p533
+g10
 sg5
-S'New Relic'
+S'Zomato'
 p534
 sg7
 S'01 / 2016'
 p535
 sa(dp536
 g3
-S'$25'
+S'$500'
 p537
 sg5
-S'Unikrn'
+S'New Relic'
 p538
 sg7
 S'01 / 2016'
 p539
 sa(dp540
 g3
-g4
-sg5
-S'General Motors'
+S'$25'
 p541
+sg5
+S'Unikrn'
+p542
 sg7
 S'01 / 2016'
-p542
-sa(dp543
+p543
+sa(dp544
 g3
-S'$100'
-p544
+g10
 sg5
-S'Tor'
+S'General Motors'
 p545
 sg7
-S'12 / 2015'
+S'01 / 2016'
 p546
 sa(dp547
 g3
-g4
+S'$100'
+p548
+sg5
+S'Tor'
+p549
+sg7
+S'12 / 2015'
+p550
+sa(dp551
+g3
+g10
 sg5
 S'GlobaLeaks'
-p548
+p552
 sg7
 S'10 / 2015'
-p549
-sa(dp550
+p553
+sa(dp554
 g3
-g4
+g10
 sg5
 S'Binary.com'
-p551
+p555
 sg7
 S'10 / 2015'
-p552
-sa(dp553
+p556
+sa(dp557
 g3
-g4
+g10
 sg5
 S'CodeIgniter'
-p554
-sg7
-S'10 / 2015'
-p555
-sa(dp556
-g3
-S'$25'
-p557
-sg5
-S'Maximum'
 p558
 sg7
-S'09 / 2015'
+S'10 / 2015'
 p559
 sa(dp560
 g3
-g4
-sg5
-S'Kaspersky Lab'
+S'$25'
 p561
+sg5
+S'Maximum'
+p562
 sg7
 S'09 / 2015'
-p562
-sa(dp563
+p563
+sa(dp564
 g3
-S'$100'
-p564
+g10
 sg5
-S'Algolia'
+S'Kaspersky Lab'
 p565
 sg7
-S'08 / 2015'
+S'09 / 2015'
 p566
 sa(dp567
 g3
-S'$200'
+S'$100'
 p568
 sg5
-S'Grabtaxi Holdings Pte Ltd'
+S'Algolia'
 p569
 sg7
 S'08 / 2015'
 p570
 sa(dp571
 g3
-g4
-sg5
-S'CERT/CC'
+S'$250'
 p572
-sg7
-S'08 / 2015'
-p573
-sa(dp574
-g3
-S'$100'
-p575
 sg5
-S'Reverb.com'
-p576
+S'ownCloud'
+p573
 sg7
 S'08 / 2015'
-p577
-sa(dp578
+p574
+sa(dp575
 g3
 S'$200'
-p579
+p576
 sg5
-S'Keybase'
+S'Grabtaxi Holdings Pte Ltd'
+p577
+sg7
+S'08 / 2015'
+p578
+sa(dp579
+g3
+g10
+sg5
+S'CERT/CC'
 p580
 sg7
-S'07 / 2015'
+S'08 / 2015'
 p581
 sa(dp582
 g3
-g4
+S'$100'
+p583
+sg5
+S'Reverb.com'
+p584
+sg7
+S'08 / 2015'
+p585
+sa(dp586
+g3
+S'$200'
+p587
+sg5
+S'Keybase'
+p588
+sg7
+S'07 / 2015'
+p589
+sa(dp590
+g3
+g10
 sg5
 S'Revive Adserver'
-p583
-sg7
-S'07 / 2015'
-p584
-sa(dp585
-g3
-S'$150'
-p586
-sg5
-S'ok.ru'
-p587
-sg7
-S'07 / 2015'
-p588
-sa(dp589
-g3
-S'$140'
-p590
-sg5
-S'Badoo'
 p591
 sg7
-S'06 / 2015'
+S'07 / 2015'
 p592
 sa(dp593
 g3
-g4
+S'$150'
+p594
+sg5
+S'ok.ru'
+p595
+sg7
+S'07 / 2015'
+p596
+sa(dp597
+g3
+S'$140'
+p598
+sg5
+S'Badoo'
+p599
+sg7
+S'06 / 2015'
+p600
+sa(dp601
+g3
+g10
 sg5
 S'Pornhub'
-p594
+p602
 sg7
 S'06 / 2015'
-p595
-sa(dp596
+p603
+sa(dp604
 g3
 S'$50'
-p597
+p605
 sg5
 S'Moneybird'
-p598
+p606
 sg7
 S'06 / 2015'
-p599
-sa(dp600
+p607
+sa(dp608
 g3
-g4
+g10
 sg5
 S'Souq.com'
-p601
+p609
 sg7
 S'06 / 2015'
-p602
-sa(dp603
+p610
+sa(dp611
 g3
 S'$100'
-p604
+p612
 sg5
 S'Dashlane'
-p605
+p613
 sg7
 S'06 / 2015'
-p606
-sa(dp607
+p614
+sa(dp615
 g3
-g4
+g10
 sg5
 S'Coursera'
-p608
+p616
 sg7
 S'05 / 2015'
-p609
-sa(dp610
+p617
+sa(dp618
 g3
-g4
+g10
 sg5
 S'Robinhood'
-p611
+p619
 sg7
 S'05 / 2015'
-p612
-sa(dp613
+p620
+sa(dp621
 g3
-g4
+g10
 sg5
 S'VK.com'
-p614
-sg7
-S'05 / 2015'
-p615
-sa(dp616
-g3
-S'$100'
-p617
-sg5
-S'Udemy'
-p618
-sg7
-S'05 / 2015'
-p619
-sa(dp620
-g3
-S'$50'
-p621
-sg5
-S'Zendesk'
 p622
 sg7
-S'04 / 2015'
+S'05 / 2015'
 p623
 sa(dp624
 g3
-S'$500'
+S'$100'
 p625
 sg5
-S'Shopify'
+S'Udemy'
 p626
 sg7
-S'04 / 2015'
+S'05 / 2015'
 p627
 sa(dp628
 g3
-S'$350'
+S'$50'
 p629
 sg5
-S'Mapbox'
+S'Zendesk'
 p630
 sg7
-S'03 / 2015'
+S'04 / 2015'
 p631
 sa(dp632
 g3
 S'$500'
 p633
 sg5
-S'Airbnb'
+S'Shopify'
 p634
 sg7
-S'02 / 2015'
+S'04 / 2015'
 p635
 sa(dp636
 g3
-S'$50'
+S'$350'
 p637
 sg5
-S'Airtable'
+S'Mapbox'
 p638
 sg7
-S'02 / 2015'
+S'03 / 2015'
 p639
 sa(dp640
 g3
-g4
+S'$500'
+p641
+sg5
+S'Airbnb'
+p642
+sg7
+S'02 / 2015'
+p643
+sa(dp644
+g3
+S'$50'
+p645
+sg5
+S'Airtable'
+p646
+sg7
+S'02 / 2015'
+p647
+sa(dp648
+g3
+g10
 sg5
 S'Adobe'
-p641
+p649
 sg7
 S'02 / 2015'
-p642
-sa(dp643
+p650
+sa(dp651
 g3
-g4
+g10
 sg5
 S'FormAssembly'
-p644
-sg7
-S'02 / 2015'
-p645
-sa(dp646
-g3
-S'$100'
-p647
-sg5
-S'Blockchain'
-p648
-sg7
-S'02 / 2015'
-p649
-sa(dp650
-g3
-S'$200'
-p651
-sg5
-S'Ubiquiti Networks'
 p652
 sg7
-S'01 / 2015'
+S'02 / 2015'
 p653
 sa(dp654
 g3
-S'$250'
+S'$100'
 p655
 sg5
-S'Snapchat'
+S'Blockchain'
 p656
 sg7
-S'01 / 2015'
+S'02 / 2015'
 p657
 sa(dp658
 g3
-S'$100'
+S'$200'
 p659
 sg5
-S'Imgur'
+S'Ubiquiti Networks'
 p660
 sg7
-S'12 / 2014'
+S'01 / 2015'
 p661
 sa(dp662
 g3
-S'$500'
+S'$250'
 p663
 sg5
-S'Uber'
+S'Snapchat'
 p664
 sg7
-S'12 / 2014'
+S'01 / 2015'
 p665
 sa(dp666
 g3
-g4
-sg5
-S'Instacart'
+S'$100'
 p667
+sg5
+S'Imgur'
+p668
 sg7
 S'12 / 2014'
-p668
-sa(dp669
+p669
+sa(dp670
 g3
 S'$500'
-p670
-sg5
-S'Yelp'
 p671
+sg5
+S'Uber'
+p672
 sg7
 S'12 / 2014'
-p672
-sa(dp673
+p673
+sa(dp674
 g3
-g4
+g10
+sg5
+S'Instacart'
+p675
+sg7
+S'12 / 2014'
+p676
+sa(dp677
+g3
+S'$500'
+p678
+sg5
+S'Yelp'
+p679
+sg7
+S'12 / 2014'
+p680
+sa(dp681
+g3
+g10
 sg5
 S'Informatica'
-p674
-sg7
-S'11 / 2014'
-p675
-sa(dp676
-g3
-S'$100'
-p677
-sg5
-S'QIWI'
-p678
-sg7
-S'11 / 2014'
-p679
-sa(dp680
-g3
-S'$250'
-p681
-sg5
-S'Vimeo'
 p682
 sg7
 S'11 / 2014'
 p683
 sa(dp684
 g3
-S'$25'
+S'$100'
 p685
 sg5
-S'WordPoints'
+S'QIWI'
 p686
 sg7
 S'11 / 2014'
 p687
 sa(dp688
 g3
-S'$512'
+S'$250'
 p689
 sg5
-S'Dropbox'
+S'Vimeo'
 p690
 sg7
-S'10 / 2014'
+S'11 / 2014'
 p691
 sa(dp692
 g3
-S'$11'
+S'$25'
 p693
 sg5
-S'Eobot'
+S'WordPoints'
 p694
 sg7
 S'10 / 2014'
 p695
 sa(dp696
 g3
-S'$100'
+S'$512'
 p697
 sg5
-S'GlassWire'
+S'Dropbox'
 p698
 sg7
-S'08 / 2014'
+S'10 / 2014'
 p699
 sa(dp700
 g3
-S'$100'
+S'$11'
 p701
 sg5
-S'Greenhouse.io'
+S'Eobot'
 p702
 sg7
-S'08 / 2014'
+S'10 / 2014'
 p703
 sa(dp704
 g3
-g4
+S'$100'
+p705
+sg5
+S'GlassWire'
+p706
+sg7
+S'08 / 2014'
+p707
+sa(dp708
+g3
+S'$100'
+p709
+sg5
+S'Greenhouse.io'
+p710
+sg7
+S'08 / 2014'
+p711
+sa(dp712
+g3
+g10
 sg5
 S'ExpressionEngine'
-p705
+p713
 sg7
 S'07 / 2014'
-p706
-sa(dp707
+p714
+sa(dp715
 g3
 S'$1k'
-p708
+p716
 sg5
 S'GitLab'
-p709
+p717
 sg7
 S'06 / 2014'
-p710
-sa(dp711
+p718
+sa(dp719
 g3
-g4
+g10
 sg5
 S'Harvest'
-p712
+p720
 sg7
 S'06 / 2014'
-p713
-sa(dp714
+p721
+sa(dp722
 g3
-g4
+g10
 sg5
 S'WePay'
-p715
+p723
 sg7
 S'06 / 2014'
-p716
-sa(dp717
+p724
+sa(dp725
 g3
 S'$420'
-p718
+p726
 sg5
 S'Twitter'
-p719
+p727
 sg7
 S'05 / 2014'
-p720
-sa(dp721
+p728
+sa(dp729
 g3
-g4
+g10
 sg5
 S'Urban Dictionary'
-p722
+p730
 sg7
 S'05 / 2014'
-p723
-sa(dp724
+p731
+sa(dp732
 g3
 S'$50'
-p725
+p733
 sg5
 S'Ian Dunn'
-p726
+p734
 sg7
 S'04 / 2014'
-p727
-sa(dp728
+p735
+sa(dp736
 g3
-g4
+g10
 sg5
 S'Cloudflare'
-p729
+p737
 sg7
 S'04 / 2014'
-p730
-sa(dp731
+p738
+sa(dp739
 g3
 S'$200'
-p732
+p740
 sg5
 S'Mail.ru'
-p733
+p741
 sg7
 S'04 / 2014'
-p734
-sa(dp735
+p742
+sa(dp743
 g3
-g4
+g10
 sg5
 S'Automattic'
-p736
+p744
 sg7
 S'04 / 2014'
-p737
-sa(dp738
+p745
+sa(dp746
 g3
 S'$100'
-p739
+p747
 sg5
 S'IRCCloud'
-p740
+p748
 sg7
 S'04 / 2014'
-p741
-sa(dp742
+p749
+sa(dp750
 g3
-g4
+g10
 sg5
 S'Khan Academy'
-p743
+p751
 sg7
 S'04 / 2014'
-p744
-sa(dp745
+p752
+sa(dp753
 g3
 S'$100'
-p746
+p754
 sg5
 S'Coinbase'
-p747
+p755
 sg7
 S'03 / 2014'
-p748
-sa(dp749
+p756
+sa(dp757
 g3
-g4
+g10
 sg5
 S'concrete5'
-p750
+p758
 sg7
 S'03 / 2014'
-p751
-sa(dp752
+p759
+sa(dp760
 g3
-g4
+g10
 sg5
 S'Slack'
-p753
-sg7
-S'02 / 2014'
-p754
-sa(dp755
-g3
-S'$300'
-p756
-sg5
-S'Verizon Media'
-p757
-sg7
-S'02 / 2014'
-p758
-sa(dp759
-g3
-S'$3k'
-p760
-sg5
-S'The Internet'
 p761
 sg7
-S'12 / 2013'
+S'02 / 2014'
 p762
 sa(dp763
 g3
 S'$300'
 p764
 sg5
-S'Phabricator'
+S'Verizon Media'
 p765
 sg7
-S'12 / 2013'
+S'02 / 2014'
 p766
 sa(dp767
 g3
-S'$1k'
+S'$3k'
 p768
 sg5
-S'Ruby on Rails'
+S'The Internet'
 p769
 sg7
 S'12 / 2013'
 p770
 sa(dp771
 g3
-S'$500'
+S'$300'
 p772
 sg5
-S'Python (IBB)'
+S'Phabricator'
 p773
 sg7
 S'12 / 2013'
 p774
 sa(dp775
 g3
-S'$500'
+S'$1k'
 p776
 sg5
-S'Django'
+S'Ruby on Rails'
 p777
 sg7
 S'12 / 2013'
 p778
 sa(dp779
 g3
-S'$3k'
+S'$500'
 p780
 sg5
-S'Nginx (IBB)'
+S'Python (IBB)'
 p781
 sg7
 S'12 / 2013'
@@ -2111,27 +2111,27 @@ g3
 S'$500'
 p784
 sg5
-S'OpenSSL (IBB)'
+S'Django'
 p785
 sg7
 S'12 / 2013'
 p786
 sa(dp787
 g3
-S'$500'
+S'$3k'
 p788
 sg5
-S'PHP (IBB)'
+S'Nginx (IBB)'
 p789
 sg7
 S'12 / 2013'
 p790
 sa(dp791
 g3
-S'$1k'
+S'$500'
 p792
 sg5
-S'Perl (IBB)'
+S'OpenSSL (IBB)'
 p793
 sg7
 S'12 / 2013'
@@ -2141,19 +2141,39 @@ g3
 S'$500'
 p796
 sg5
-S'Apache httpd (IBB)'
+S'PHP (IBB)'
 p797
 sg7
 S'12 / 2013'
 p798
 sa(dp799
 g3
-S'$500'
+S'$1k'
 p800
 sg5
-S'HackerOne'
+S'Perl (IBB)'
 p801
 sg7
-S'11 / 2013'
+S'12 / 2013'
 p802
+sa(dp803
+g3
+S'$500'
+p804
+sg5
+S'Apache httpd (IBB)'
+p805
+sg7
+S'12 / 2013'
+p806
+sa(dp807
+g3
+S'$500'
+p808
+sg5
+S'HackerOne'
+p809
+sg7
+S'11 / 2013'
+p810
 sa.

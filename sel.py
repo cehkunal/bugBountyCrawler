@@ -7,6 +7,18 @@ import sqlite3
 
 progDir = list()
 progDirBugCrowd = list()
+def get_token(fname):
+    with open(fname,'r') as f:
+        data=f.read().strip().split(',')
+    f.close()
+    return data
+tk=get_token('/etc/mytk')
+TOKEN=tk[0]
+CHAT_ID2=tk[1]
+URL="https://api.telegram.org/bot"+TOKEN+"/sendMessage"
+
+def send_tele(CHAT_ID,MESSAGE):
+        resp = requests.post(URL,data={'chat_id':CHAT_ID,'text':MESSAGE})
 
 def syncToDatabase():
 	conn = sqlite3.connect('bugBounty.db')
@@ -38,18 +50,31 @@ def syncToDatabase():
 	    minb = p['progMinBounty']
 	    conn.execute('''REPLACE INTO PROGRAMS (PROG_NAME, PROG_LAUNCH_DATE, PROG_MIN_BOUNTY, PROG_SOURCE) VALUES(?,?,?,?);''', (name,ldate,minb,'HackerOne'))
         conn.commit()
-	cur = conn.execute('SELECT * FROM PROGRAMS;')
-	for a in cur:
-	    print str(a)
+	#cur = conn.execute('SELECT * FROM PROGRAMS;')
+	#for a in cur:
+	#    print str(a)
 
 
 def notifyNewPrograms():
     h1diff = checkh1difference()
     bcdiff = checkbugcrowddifference()
-    if len(h1diff) > 0:
-        sendsms(['8010533210','8770766532','8660477425'],",".join(list(h1diff)),'Hackerone')    
-    if len(bcdiff) > 0:
-        sendsms(['8010533210','8770766532','8660477425'],",".join(list(bcdiff)),'Bugcrowd')
+    #if len(h1diff) > 0:
+        #sendsms(['8010533210','8770766532','8660477425'],",".join(list(h1diff)),'Hackerone')    
+    #if len(bcdiff) > 0:
+        #sendsms(['8010533210','8770766532','8660477425'],",".join(list(bcdiff)),'Bugcrowd')
+    hck="\n".join(list(h1diff))
+    bug = "\n".join(list(bcdiff))
+    msg1="HackerAlert-->"+hck
+    msg2="BugAlert-->"+bug
+    if(hck!=""):
+        send_tele(CHAT_ID2,msg1)
+        #print "from hck1"
+    if(bug!=""):
+        send_tele(CHAT_ID2,msg2)
+        #print "from bug"
+    if(hck=="" and bug==""):
+
+        send_tele(CHAT_ID2,"Kuch ni Aaya Abtk to..")
 
 
 def checkh1difference():
@@ -80,14 +105,14 @@ def getsmstoken():
 def sendsms(to, data , source):
     #to is a LIST of recipents
     msg = "New Programs Found in " + source + ":" + data
-    print "\033[1;30mSending Alerts\033[1;m" + msg
+    #print "\033[1;30mSending Alerts\033[1;m" + msg
     rcpt = ",".join(to)
     token = getsmstoken()
     url = 'https://www.fast2sms.com/dev/bulk'
     payload = 'sender_id=FSTSMS&message=' + msg + '&language=english&route=p&numbers=' + rcpt
     headers = { 'authorization':token, 'Content-Type':'application/x-www-form-urlencoded', 'Cache-Control':'no-cache', }
     response = requests.request('POST', url, data=payload, headers=headers)
-    print response
+    #print response
 
 def driver_stop(driver):
     driver.close()
@@ -104,13 +129,13 @@ def dump_load(filename):
     f.close()
     return data
 
-def printHackeronePrograms(programList):
-    for i in programList:
-    	print "\033[1;32mProgram Name:\033[1;m" + "\033[1;33m" + i['progName'] +"\033[1;m" + "                  "  + "\033[1;35m" +i['progLaunchDate'] + "\033[1;m" +  "                 " + "\033[1;36m" +i['progMinBounty'] + "\033[1;m"
+#def printHackeronePrograms(programList):
+    #for i in programList:
+    	#print "\033[1;32mProgram Name:\033[1;m" + "\033[1;33m" + i['progName'] +"\033[1;m" + "                  "  + "\033[1;35m" +i['progLaunchDate'] + "\033[1;m" +  "                 " + "\033[1;36m" +i['progMinBounty'] + "\033[1;m"
 
-def printBugCrowdPrograms():
-	for i in progDirBugCrowd:
-		print "\033[1;31mBugcrowd: "+"\033[1;m" + "\033[1;33m"  + i + "\033[1;m"
+#def printBugCrowdPrograms():
+	#for i in progDirBugCrowd:
+		#print "\033[1;31mBugcrowd: "+"\033[1;m" + "\033[1;33m"  + i + "\033[1;m"
 
 def crawlHackerone(driver):
     driver.get('https://hackerone.com/directory?order_direction=DESC') 
@@ -184,10 +209,10 @@ chrome_options.add_argument('--no-sandbox') # required when running as root user
 driver = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options,service_args=['--verbose', '--log-path=/tmp/chromedriver.log'])
 
 crawlHackerone(driver)
-printHackeronePrograms(progDir)
+#printHackeronePrograms(progDir)
 
 crawlBugCrowd(driver)
-printBugCrowdPrograms()
+#printBugCrowdPrograms()
 
 #Check Difference before dumping
 notifyNewPrograms()
@@ -196,5 +221,5 @@ dump_dump('program_h1',progDir)
 dump_dump('program_bugcrowd',progDirBugCrowd)
 
 driver_stop(driver)
-print "\033[1;39mSaving Results in bugBounty.db\033[1;m"
+#print "\033[1;39mSaving Results in bugBounty.db\033[1;m"
 syncToDatabase()
